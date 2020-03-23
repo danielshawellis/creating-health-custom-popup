@@ -3,7 +3,8 @@ function ammoniteCustomPopup() {
   // SCRIPT SETTINGS
   let settings = {
     popupDelay: 1000,
-    fadeDuration: 500
+    fadeDuration: 500,
+    minimumScreenSize: 900
   }
 
   // ASSOCIATED CLASSES
@@ -15,9 +16,11 @@ function ammoniteCustomPopup() {
 
 
   // EVENT LISTENERS
-  // Display popup at a delay after DOM content is loaded
+  // Display popup at a delay after DOM content is loaded if screen size is not too low
   jQuery( document ).ready( function() {
-    setTimeout( displayPopup, settings.popupDelay );
+    if ( window.innerWidth >= settings.minimumScreenSize ) {
+      setTimeout( displayPopup, settings.popupDelay );
+    }
   } );
 
   // Hide popup when user clicks outside of popup main
