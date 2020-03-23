@@ -1,4 +1,4 @@
-<div class="ammonite-custom-popup-container" style="display: none;">
+<div class="ammonite-custom-popup-container" style="display: none; opacity: 0;">
   <div class="ammonite-custom-popup-main">
     <div class="ammonite-custom-popup-left-section">
     </div>

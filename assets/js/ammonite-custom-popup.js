@@ -3,7 +3,7 @@ function ammoniteCustomPopup() {
   // SCRIPT SETTINGS
   let settings = {
     popupDelay: 1000,
-    fadeDuration: 500,
+    fadeDuration: 300,
     minimumScreenSize: 900
   }
 
@@ -38,6 +38,9 @@ function ammoniteCustomPopup() {
   function displayPopup() {
     // Remove the display property set to "none" such that element falls back on display "grid" within stylesheet
     jQuery( '.' + classes.container ).css( 'display', '' );
+    jQuery( '.' + classes.container ).animate( {
+      opacity: 1
+    }, settings.fadeDuration );
   }
 
   function hidePopup() {
