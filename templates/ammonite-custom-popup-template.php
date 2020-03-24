@@ -7,8 +7,6 @@
       <div class="ammonite-custom-popup-right-section-text">
         <?php echo wp_get_attachment_image( 2099, 'medium', false, '' ) ?>
       </div>
-      <!-- <h1 class="ammonite-custom-popup-right-section-heading">Sign Up and Save!</h1>
-      <p class="ammonite-custom-popup-right-section-text">You'll recieve 10% off your first purchase, exclusive information, and special offers.</p> -->
       <form accept-charset="UTF-8" action="https://ay767.infusionsoft.com/app/form/process/cbbd14525742739291f9d8f0f02d4bbc" class="ammonite-custom-popup-right-section-form infusion-form" id="inf_form_cbbd14525742739291f9d8f0f02d4bbc" method="POST">
           <input name="inf_form_xid" type="hidden" value="cbbd14525742739291f9d8f0f02d4bbc" />
           <input name="inf_form_name" type="hidden" value="Web Form submitted" />
