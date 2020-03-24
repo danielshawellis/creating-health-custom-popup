@@ -10,6 +10,7 @@
   justify-content: center;
   align-items: center;
   background-color: rgba(0,0,0,0.5);
+  cursor: pointer;
 }
 .ammonite-custom-popup-main {
   display: grid;
@@ -17,12 +18,19 @@
   height: min-content;
   width: 800px;
   background-color: white;
+  cursor: default;
 }
 .ammonite-custom-popup-left-section {
   grid-column-start: 1;
   grid-column-end: 2;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 35px;
   background-color: #69be69;
+}
+.ammonite-custom-popup-left-section image {
+  object-fit: contain;
 }
 .ammonite-custom-popup-right-section {
   grid-column-start: 2;
@@ -31,11 +39,9 @@
   flex-wrap: wrap;
   padding: 35px;
 }
-.ammonite-custom-popup-right-section-heading {
-  flex-basis: 100%;
-}
 .ammonite-custom-popup-right-section-text {
   flex-basis: 100%;
+  padding: 15px 40px 15px 0;
 }
 .ammonite-custom-popup-right-section-form {
   flex-basis: 100%;
