@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name:       Ammonite Custom Popup
- * Description:       Adds a custom popup with a newsletter signup form.
+ * Description:       Adds a custom popup with a newsletter signup form. To use, add the shortcode [ammonite_custom_popup] to any page where you would like this popup to appear.
  * Version:           1.0.0
  * Author:            Daniel Ellis
  * Author URI:        https://danielellisdevelopment.com/
