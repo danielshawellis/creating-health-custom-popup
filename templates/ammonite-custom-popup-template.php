@@ -32,7 +32,7 @@
       <script type="text/javascript" src="https://ay767.infusionsoft.com/resources/external/recaptcha/production/recaptcha.js?b=1.70.0.206035-hf-202003151330"></script>
       <script src="https://www.google.com/recaptcha/api.js?onload=onloadInfusionRecaptchaCallback&render=explicit" async="async" defer="defer"></script>
       <script type="text/javascript" src="https://ay767.infusionsoft.com/app/timezone/timezoneInputJs?xid=5feba70834176f90616665a95b39d1d1"></script>
-      <div class="">
+      <div class="ammonite-custom-popup-left-section-logo">
         <?php echo wp_get_attachment_image( 21, 'medium', false, '' ) ?>
       </div>
     </div>
