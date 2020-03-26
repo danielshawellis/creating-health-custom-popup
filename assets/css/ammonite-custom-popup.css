@@ -16,7 +16,7 @@
   display: grid;
   grid-template-columns: 2fr 3fr;
   height: min-content;
-  width: 800px;
+  width: 700px;
   background-color: white;
   cursor: default;
 }
