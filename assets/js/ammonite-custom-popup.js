@@ -4,7 +4,8 @@ function ammoniteCustomPopup() {
   let settings = {
     popupDelay: 30000,
     fadeDuration: 300,
-    minimumScreenSize: 900
+    minimumScreenSize: 900,
+    sessionStorageDisplayedKey: 'ammoniteCustomPopupDisplayed'
   }
 
   // ASSOCIATED CLASSES
@@ -17,9 +18,11 @@ function ammoniteCustomPopup() {
 
 
   // EVENT LISTENERS
-  // Display popup at a delay after DOM content is loaded if screen size is not too low
+  // Display popup at a delay after DOM content is loaded if screen size is not too low and popup has not been displayed during current session
   jQuery( document ).ready( function() {
-    if ( window.innerWidth >= settings.minimumScreenSize ) {
+    let clientIsDesktop = window.innerWidth >= settings.minimumScreenSize;
+    let popupAlreadyDisplayedDuringSession = sessionStorage.getItem( settings.sessionStorageDisplayedKey );
+    if ( clientIsDesktop && !popupAlreadyDisplayedDuringSession ) {
       setTimeout( displayPopup, settings.popupDelay );
     }
   } );
@@ -44,6 +47,9 @@ function ammoniteCustomPopup() {
     jQuery( '.' + classes.container ).animate( {
       opacity: 1
     }, settings.fadeDuration );
+
+    // Set marker in session storage to prevent popup from reappearing
+    sessionStorage.setItem( settings.sessionStorageDisplayedKey, 'true' );
   }
 
   function hidePopup() {
