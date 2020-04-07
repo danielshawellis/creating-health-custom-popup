@@ -2,7 +2,7 @@
 function ammoniteCustomPopup() {
   // SCRIPT SETTINGS
   let settings = {
-    popupDelay: 30000,
+    popupDelay: 10000,
     fadeDuration: 300,
     minimumScreenSize: 900,
     sessionStorageDisplayedKey: 'ammoniteCustomPopupDisplayed'
