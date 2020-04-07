@@ -11,7 +11,8 @@ function ammoniteCustomPopup() {
   let classes = {
     container: 'ammonite-custom-popup-container',
     main: 'ammonite-custom-popup-main',
-    exitButton: 'ammonite-custom-popup-button-exit'
+    exitButton: 'ammonite-custom-popup-button-exit',
+    xExitButton: 'ammonite-custom-popup-close-button'
   }
 
 
@@ -30,9 +31,11 @@ function ammoniteCustomPopup() {
     }
   } );
 
-  // Hide popup when user clicks exit exit
+  // Hide popup when user clicks "No Thanks" exit button
   jQuery( '.' + classes.exitButton ).click( hidePopup );
 
+  // Hide popup when user clicks "X" exit button
+  jQuery( '.' + classes.xExitButton ).click( hidePopup );
 
   // SCRIPT FUNCTIONS
   function displayPopup() {
