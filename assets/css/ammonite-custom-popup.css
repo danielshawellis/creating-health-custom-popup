@@ -14,11 +14,32 @@
 }
 .ammonite-custom-popup-main {
   display: grid;
+  position: relative;
   grid-template-columns: 2fr 3fr;
   height: min-content;
   width: 700px;
   background-color: white;
   cursor: default;
+}
+.ammonite-custom-popup-close-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 40px;
+  width: 40px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 200ms linear;
+}
+.ammonite-custom-popup-close-button:hover {
+  background: #69be69;
+}
+.ammonite-custom-popup-close-button path {
+  fill: #69be69;
+  transition: fill 200ms linear;
+}
+.ammonite-custom-popup-close-button:hover path {
+  fill: #fff;
 }
 .ammonite-custom-popup-left-section {
   grid-column-start: 1;
