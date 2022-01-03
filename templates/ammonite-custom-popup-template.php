@@ -13,11 +13,11 @@
       </svg>
     </div>
     <div class="ammonite-custom-popup-left-section">
-      <?php echo wp_get_attachment_image( 2098, 'medium', false, '' ) ?>
+      <?php echo wp_get_attachment_image( 3356, 'medium', false, '' ) ?>
     </div>
     <div class="ammonite-custom-popup-right-section">
       <div class="ammonite-custom-popup-right-section-text">
-        <?php echo wp_get_attachment_image( 2099, 'medium', false, '' ) ?>
+        <?php echo wp_get_attachment_image( 3355, 'medium', false, '' ) ?>
       </div>
       <form method="POST" action="https://maxwellclinic.activehosted.com/proc.php" id="_form_38_" class="_form _form_38 _inline-form  _dark" novalidate>
         <input type="hidden" name="u" value="38" />
