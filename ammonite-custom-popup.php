@@ -2,7 +2,7 @@
 /**
  * Plugin Name:       Ammonite Custom Popup
  * Description:       Adds a custom popup with a newsletter signup form. To use, add the shortcode [ammonite_custom_popup] to any page where you would like this popup to appear.
- * Version:           1.0.0
+ * Version:           2.0.0
  * Author:            Daniel Ellis
  * Author URI:        https://danielellisdevelopment.com/
  */
@@ -21,8 +21,8 @@ if ( !class_exists( 'Ammonite_Custom_Popup' ) ) {
   class Ammonite_Custom_Popup {
     public static function register_styles_and_scripts() {
       add_action( 'wp_enqueue_scripts', function() {
-        wp_register_script( 'ammonite-custom-popup-script', plugins_url('assets/js/ammonite-custom-popup.js', __FILE__ ), array('jquery'), '1.0.0', true );
-        wp_register_style( 'ammonite-custom-popup-styles', plugins_url('assets/css/ammonite-custom-popup.css', __FILE__ ), array(), '1.0.0', 'all' );
+        wp_register_script( 'ammonite-custom-popup-script', plugins_url('assets/js/ammonite-custom-popup.js', __FILE__ ), array('jquery'), '2.0.0', true );
+        wp_register_style( 'ammonite-custom-popup-styles', plugins_url('assets/css/ammonite-custom-popup.css', __FILE__ ), array(), '2.0.0', 'all' );
       } );
     }
 
